@@ -4,14 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #007BFF, #6C757D);
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            background: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background: #218838;
+            transform: scale(1.1);
+        }
+    </style>
     <script>
         function openLinks() {
             const links = [
+                "https://outlook.office.com/mail/",
                 "https://iamray13.github.io/Sidebar",
                 "https://iamray13.github.io/Templates",
                 "https://iamray13.github.io/Formatter",
                 "https://adapthealth.com/locations/",
-                "https://iamray13.github.io/calc",
+                "https://iamray13.github.io/Calc",
                 "https://iamray13.github.io/PDF"
             ];
             links.forEach(link => {
@@ -21,6 +55,7 @@
     </script>
 </head>
 <body>
+    <h1>Welcome to the Link Opener!</h1>
     <button onclick="openLinks()">Open All Links</button>
 </body>
 </html>
