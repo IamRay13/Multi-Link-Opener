@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Links</title>
+    <script>
+        function openLinks() {
+            const links = [
+                "https://iamray13.github.io/Sidebar",
+                "https://iamray13.github.io/Templates",
+                "https://iamray13.github.io/Formatter",
+                "https://adapthealth.com/locations/",
+                "https://iamray13.github.io/calc",
+                "https://iamray13.github.io/PDF"
+            ];
+            links.forEach(link => {
+                window.open(link, "_blank");
+            });
+        }
+    </script>
+</head>
+<body>
+    <button onclick="openLinks()">Open All Links</button>
+</body>
+</html>
